@@ -62,7 +62,7 @@ public class DtkdataController {
     @ResponseBody
     @GetMapping("/list")
     @RequiresPermissions("dtk:dtkdata:dtkdata")
-    @ApiOperation(value="创建用户", notes="根据User对象创建用户")
+    @ApiOperation(value = "创建用户", notes = "根据User对象创建用户")
 //    @ApiImplicitParam(name = "params", value = "用户详细实体user", required = true, dataType = "string")
 //    @ApiImplicitParams({
 //            @ApiImplicitParam(name = "a", value = "a", required = true, dataType = "string"),
@@ -71,13 +71,13 @@ public class DtkdataController {
 //    public PageUtils list(@ApiParam(required=true, name="", value="参数") @RequestParam Map<String, Object> params) {
 //    @ApiImplicitParam(name = "status_ids", required = false, allowMultiple = true, paramType = "string", dataType = "array")
 //    @ApiImplicitParam dataType = "map"
-    @ApiImplicitParam(name = "params", required = false,  paramType = "query", dataType = "Map")
+    @ApiImplicitParam(name = "params", required = false, paramType = "query", dataType = "Map")
     public PageUtils list(@ApiParam @RequestParam Map<String, Object> params) {
         String url = "";
-        url = rre.getScheme() +"://" + rre.getServerName()
-                + ":" +rre.getServerPort()
+        url = rre.getScheme() + "://" + rre.getServerName()
+                + ":" + rre.getServerPort()
                 + rre.getServletPath();
-        if (rre.getQueryString() != null){
+        if (rre.getQueryString() != null) {
             url += "?" + rre.getQueryString();
         }
         System.out.println("!!!!!!!!!!!!");

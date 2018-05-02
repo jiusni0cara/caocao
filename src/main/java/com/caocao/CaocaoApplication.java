@@ -17,10 +17,12 @@ import org.springframework.web.client.RestTemplate;
 public class CaocaoApplication {
     @Autowired
     private RestTemplateBuilder builder;
+
     @Bean
     public RestTemplate restTemplate() {
         return builder.build();
     }
+
     public static void main(String[] args) {
         SpringApplication.run(CaocaoApplication.class, args);
         System.out.println("ヾ(◍°∇°◍)ﾉﾞ    caocao启动成功      ヾ(◍°∇°◍)ﾉﾞ\n" +

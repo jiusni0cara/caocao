@@ -1,8 +1,5 @@
 <component name="libraryTable">
   <library name="Maven: io.swagger:swagger-annotations:1.5.10">
-    <ANNOTATIONS>
-      <root url="file://$PROJECT_DIR$" />
-    </ANNOTATIONS>
     <CLASSES>
       <root url="jar://D:/mvn3/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.jar!/" />
     </CLASSES>
